@@ -25,7 +25,7 @@ SECRET_KEY = 'lupsh_z2#k%#-x9b8n$erk(p8y&oje)bhppao_nz$4#qg7&nf)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['45.76.122.117']
 
 
 # Application definition
