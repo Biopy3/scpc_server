@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Identificate Species Dividing Line</title>
+</head>
+<body>
+    <h1>Output:</h1>
+    <h2>Please put in the email and access code to download your results after you recive the email.
+    <form action="/home/result/download/" method="post" enctype="multipart/form-data" >
+        {% csrf_token %}
+        <p>your email: {{ resultinfo.email }} {{ errors.email }}</p>
+        <p>your access code: {{ resultinfo.access_code }} {{ errors.access_code }}</p>
+        <strong><input type="submit" value="Download"></strong>
+    </form>
+</body>
+</html>
