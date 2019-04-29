@@ -61,8 +61,8 @@ def save_post(request):
             record = Record.objects.get(access_code=access_code)
             record.resultfile = dir_path + '.zip'
             record.save()
-            return HttpResponse('click the url to download your results: <a href=http://127.0.0.1:8000/scpc/download_results/'+access_code+'>\
-                                http://127.0.0.1:8000/scpc/download_results/' + access_code + '</a>',)
+            return HttpResponse('click the url to download your results: <a href=http://45.76.122.117:8000/scpc/download_results/'+access_code+'>\
+                                http://45.76.122.117:8000/scpc/download_results/' + access_code + '</a>',)
         else :
           return HttpResponse("errors")
     else:
